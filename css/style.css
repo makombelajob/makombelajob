@@ -1,0 +1,245 @@
+:root {
+    font-size: 20px;
+    --clr-black: black;
+    --clr-white: white;
+}
+body {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+    box-sizing: border-box;
+}
+header {
+    nav {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--clr-black);
+        padding-block: 0.5rem;
+        img {
+            width: 40px;
+            border-radius: 50%;
+        }
+        .burger {
+            cursor: pointer;
+        }
+        .open {
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: linear-gradient(to left, rgba(206, 208, 211, 0.8), rgba(1, 6, 7, 0.973));
+            padding-block: 2rem;
+            ul {
+                text-align: start;
+                margin-left: 2rem;
+                li {
+                    padding: 0.5rem;
+                    a {
+                        text-decoration: none;
+                        color: var(--clr-white);
+                    }
+                }
+            }
+            #close {
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                border: none;
+                border-radius: 50%;
+                color: var(--clr-white);
+                background-color: var(--clr-black);
+                cursor: pointer;
+            }
+        }
+        .active {
+            display: block;
+        }
+        > a {
+            text-decoration: none;
+            color: var(--clr-black);
+        }
+    }
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-block: 1.5rem;
+        color: rgba(29, 109, 119, 0.8);
+        text-transform: uppercase;
+    }
+    h4,
+    h5,
+    p {
+        padding: 0.3rem;
+    }
+    .mouseenter {
+        cursor: pointer;
+    }
+    #hero {
+        background: linear-gradient(to left, rgba(206, 208, 211, 0.8), rgba(29, 109, 119, 0.8));
+        border-radius: 1rem;
+        margin-top: 0.4rem;
+        padding: 0.2rem;
+        img {
+            border-radius: 50%;
+            padding: 1rem;
+        }
+        .header,
+        .mecontact {
+            text-align: center;
+            padding-block: 0.5rem;
+        }
+    }
+    .expert {
+        box-shadow: 2px 2px 4px rgba(29, 109, 119, 0.8);
+        border-radius: 2rem;
+        margin-block: 1rem;
+        padding: 0.5rem;
+    }
+    .education {
+        article {
+            background: linear-gradient(to right, rgba(46, 69, 102, 0.603), rgba(29, 109, 119, 0.8));
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        #slide {
+            position: relative;
+            .elt {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+            #left,
+            #right {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                color: var(--clr-white);
+            }
+            #right {
+                right: 0.2rem;
+            }
+            #left {
+                left: 0.2rem;
+            }
+        }
+    }
+    #techno {
+        text-align: center;
+        ul {
+            background: linear-gradient(to right, rgba(47, 79, 150, 0.603), rgba(39, 63, 194, 0.349));
+            border-radius: 50%;
+            padding: 1.5rem;
+            li {
+                padding: 0.3rem;
+            }
+        }
+    }
+    #lang,
+    #loisirs,
+    #refer {
+        #lists,
+        #livres,
+        #pro {
+            .list,
+            .livre,
+            .pro {
+                display: none;
+                &.listactive,
+                &.livreactive,
+                &.proactive {
+                    display: block;
+                    margin-block: 0.3rem;
+                    background: linear-gradient(to right, rgba(13, 36, 85, 0.603), rgba(39, 86, 119, 0.459));
+                    padding-block: 0.7rem;
+                    text-align: center;
+                    border-radius: 0.3rem;
+                }
+                &.livreactive {
+                    background: linear-gradient(to left, rgba(73, 46, 134, 0.521), rgba(16, 12, 51, 0.349));
+                }
+                &.proactive {
+                    background: linear-gradient(to right, rgba(99, 98, 105, 0.603), rgba(17, 42, 70, 0.692));
+                }
+            }
+        }
+    }
+    fieldset {
+        text-align: center;
+        img {
+            width: 70px;
+            border-radius: 50%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to left, rgba(64, 59, 92, 0.603), rgba(62, 83, 107, 0.692));
+            padding: 1rem;
+            text-align: start;
+            border-radius: 0.5rem;
+            .invalid-feedback,
+            .valid,
+            .invalid {
+                display: none;
+            }
+            input:not([type="checkbox"]),
+            textarea {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            #email,
+            #sujet {
+                height: 1rem;
+            }
+            label {
+                padding-block: 1rem;
+            }
+            .btn-center {
+                text-align: center;
+                padding: 1rem;
+                #submit {
+                    border: none;
+                    padding: 0.5rem;
+                    border-radius: 1rem;
+                    background: linear-gradient(to right, rgba(11, 12, 12, 0.603), rgba(58, 68, 71, 0.247));
+                    color: var(--clr-white);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: linear-gradient(to left, rgba(206, 208, 211, 0.8), rgba(1, 6, 7, 0.973));
+    color: white;
+    h4 {
+        text-align: center;
+        padding-bottom: 0.3rem;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 1rem;
+        a {
+            color: var(--clr-white);
+        }
+    }
+}
