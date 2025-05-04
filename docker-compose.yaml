@@ -1,0 +1,71 @@
+services:
+    apache:
+        image: php:8.5-apache
+        container_name: makombelajob_pa
+        build:
+            context: ./php
+        ports:
+            -   "8080:80"
+        volumes:
+            -   ./app:/var/www/html/
+        depends_on:
+            -   database
+
+    database:
+        image: mysql:8.0
+        container_name: makombelajob_db
+        environment:
+            MYSQL_ROOT_PASSWORD: admin7791
+            MYSQL_DATABASE: portfolio
+            MYSQL_USER: admin
+            MYSQL_PASSWORD: admin7791
+        ports:
+            -   "3306:3306"
+        volumes:
+            -   ./mysql:/var/lib/mysql
+
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: makombelajob_pma
+        ports:
+            -   "8081:80"
+        environment:
+            PMA_HOST: mysql
+            PMA_PASSWORD: sondage7791
+        depends_on:
+            -   database
+
+    postgresql:
+        image: bitnami/postgresql
+        container_name: makombelajob_postgres
+        environment:
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD: password7791
+            POSTGRES_DB: portfolio
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./postgres:/bitnami/postgresql
+
+    pgadmin:
+        image: dpage/pgadmin4
+        container_name: makombelajob_pgadmin
+        environment:
+            PGADMIN_DEFAULT_EMAIL: admin@makombela.zr
+            PGADMIN_DEFAULT_PASSWORD: admin
+        ports:
+            -   "8082:80"
+        depends_on:
+            -   postgresql
+
+    mail_hog:
+        image: mailhog/mailhog
+        container_name: makombelajob_mail
+        logging:
+            driver: 'none'
+        ports:
+            -   "1025:1025"
+            -   "8025:8025"
+        
+
+    
