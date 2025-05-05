@@ -98,12 +98,15 @@ include_once 'includes/header.php';
                                         </div>
                                     </div>
                                 </div>
+                                <div class="">
+                                    <a class="text-decoration-none text-danger" href="certificate.php">Certificat</a>
+                                </div>
                             </article>
                             <article class="alert alert-info col-12 col-md-5">
                                 <aside>
                                     <p>
                                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#airplane" aria-expanded="false" aria-controls="airplane">
-                                            Intégrateur cabine Aéronautique
+                                            Intégrateur cabine Aéronefs
                                         </button>
                                     </p>
                                 </aside>
@@ -113,6 +116,9 @@ include_once 'includes/header.php';
                                             Formation d'Intégrateur Cabine Aéronautique accéleré de 6 mois au sein de l'organisme AFPA BALMA, et obtenue mon CQPM.
                                         </div>
                                     </div>
+                                </div>
+                                <div class="">
+                                    <a class="text-decoration-none text-danger" href="certificate.php">Certificat</a>
                                 </div>
                             </article>
                             <article class="alert alert-info col-12 col-md-5">
@@ -130,6 +136,9 @@ include_once 'includes/header.php';
                                         </div>
                                     </div>
                                 </div>
+                                <div class="">
+                                    <a class="text-decoration-none text-danger" href="certificate.php">Certificat</a>
+                                </div>
                             </article>
                             <article class="alert alert-info col-12 col-md-5">
                                 <aside>
@@ -145,6 +154,9 @@ include_once 'includes/header.php';
                                             J'ai suivis différentes formations en ligne sur <a href="https://coursera.org" class="text-secondary">Coursera</a> dans le domaine numérique qui m'a bien initié et m'as permis de trouver ma passion professionnelle.
                                         </div>
                                     </div>
+                                </div>
+                                <div class="">
+                                    <a class="text-decoration-none text-danger" href="certificate.php">Certificat</a>
                                 </div>
                             </article>
                         </div>
