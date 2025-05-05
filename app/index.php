@@ -15,9 +15,9 @@ include_once 'includes/header.php';
             <div class="text-center my-3">
                 <h1 class="fs-1 text-uppercase text-primary fw-bold">Développeur web et web mobile</h1>
             </div>
-            <section id="presentation" class="mt-3">
+            <section id="presentation" class="mt-3" itemscope itemtype="https://schema.org/Person">
                 <div class="card alert alert-primary w-100 w-md-75" style="width: 18rem;">
-                    <img src="assets/images/jobb.jpg" class="card-img-top" alt="image de profile de MAKOMBELA job l'auteur du site">
+                    <img src="assets/images/jobb.jpg" class="card-img-top" alt="image de profile de MAKOMBELA job l'auteur du site" itemprop="image">
                     <div class="card-body">
                         <h5 class="card-title fs-1 fw-bold">Job MAKOMBELA</h5>
                         <p class="card-text">À la recherche d’un emploi pouvant me permettre de progresser et de maîtriser mes compétences dans un environnement de travail adapté dans le domaine du développement web et web mobile.</p>

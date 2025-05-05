@@ -18,7 +18,70 @@
     <!-- <script src="Js/contact.js" defer></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Portfolio de Job Makombela</title>
+    <title>Job MAKOMBELA - Développeur Web et Web Mobile à Toulouse</title>
+    <meta name="description" content="Portfolio de Job MAKOMBELA, développeur web et web mobile basé à Toulouse. Découvrez ses expériences, formations et contactez-le.">
+    <meta name="keywords" content="développeur web, web mobile, portfolio, Job Makombela, Toulouse, intégrateur cabine, AFPA, Coursera, AIRBUS">
+    <meta name="author" content="Job Makombela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Job Makombela",
+            "jobTitle": "Développeur Web et Web Mobile",
+            "url": "https://tonsite.com",
+            "image": "https://tonsite.com/assets/images/jobb.jpg",
+            "email": "makombelajob@gmail.com",
+            "telephone": "+33761078091",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "412 Route de Saint Simon",
+                "addressLocality": "Toulouse",
+                "postalCode": "31100",
+                "addressCountry": "FR"
+            },
+            "alumniOf": [
+                {
+                    "@type": "EducationalOrganization",
+                    "name": "AFPA Balma"
+                },
+                {
+                    "@type": "EducationalOrganization",
+                    "name": "Ecole Européenne du Numérique"
+                },
+                {
+                    "@type": "EducationalOrganization",
+                    "name": "Coursera"
+                }
+            ],
+            "knowsAbout": [
+                "Développement Web",
+                "Web mobile",
+                "Intégration cabine",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "PHP",
+                "Responsive design"
+            ],
+            "worksFor": {
+                "@type": "Organization",
+                "name": "AIRBUS SAS"
+            },
+            "hasOccupation": {
+                "@type": "Occupation",
+                "name": "Développeur Web et Web mobile",
+                "description": "Développe des interfaces web adaptatives et assure le bon fonctionnement technique d’un site web ou d’une application mobile.",
+                "skills": ["Développement web", "Responsive", "JavaScript", "PHP", "Bootstrap"]
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://tonsite.com"
+            }
+        }
+    </script>
+
+
 </head>
 <body>
 <header>
