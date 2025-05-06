@@ -33,7 +33,9 @@ function insertIntoCertificat($pdo): void
         ['Coursera_SQL.pdf', 'coursera'],
         ['Coursera_google.pdf', 'coursera'],
         ['Coursera_FrontEnd.pdf' , 'coursera'],
-        ['CV_resume.pdf' , 'Cv_personnel']
+        ['CV_resume.pdf' , 'Cv_personnel'],
+        ['CV_resume.pdf' , 'ica'],
+        ['CV_resume.pdf' , 'school']
     ];
     $stmt = $pdo->prepare("INSERT INTO certificate (name, school) VALUES (?, ?)");
     foreach ($certificats as $certificat){
