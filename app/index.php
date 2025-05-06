@@ -2,7 +2,6 @@
 session_start();
 include_once 'includes/header.php';
 ?>
-
     <main class="container mt-5">
         <div class="mt-5 mb-0">
             <?php if(isset($_SESSION['successfully']['sent'])) : ;?>
@@ -99,7 +98,10 @@ include_once 'includes/header.php';
                                     </div>
                                 </div>
                                 <div class="">
-                                    <a class="text-decoration-none text-danger" href="certificate.php">Certificat</a>
+                                    <form action="certificate.php" method="get">
+                                        <input type="hidden" name="certificate" value="devops">
+                                        <button class="btn btn-secondary text-white " >Certificat</button>
+                                    </form>
                                 </div>
                             </article>
                             <article class="alert alert-info col-12 col-md-5">
@@ -118,7 +120,10 @@ include_once 'includes/header.php';
                                     </div>
                                 </div>
                                 <div class="">
-                                    <a class="text-decoration-none text-danger" href="certificate.php">Certificat</a>
+                                    <form action="certificate.php?coursera=" method="get">
+                                        <input type="hidden" name="certificate" value="ica">
+                                        <button class="btn btn-secondary text-white ">Certificat</button>
+                                    </form>
                                 </div>
                             </article>
                             <article class="alert alert-info col-12 col-md-5">
@@ -137,7 +142,10 @@ include_once 'includes/header.php';
                                     </div>
                                 </div>
                                 <div class="">
-                                    <a class="text-decoration-none text-danger" href="certificate.php">Certificat</a>
+                                    <form action="certificate.php" method="get">
+                                        <input type="hidden" name="certificate" value="school">
+                                        <button class="btn btn-secondary text-white ">Certificat</button>
+                                    </form>
                                 </div>
                             </article>
                             <article class="alert alert-info col-12 col-md-5">
@@ -156,7 +164,10 @@ include_once 'includes/header.php';
                                     </div>
                                 </div>
                                 <div class="">
-                                    <a class="text-decoration-none text-danger" href="certificate.php">Certificat</a>
+                                    <form action="certificate.php" method="get">
+                                        <input type="hidden" name="certificate" value="coursera">
+                                        <button class="btn btn-secondary text-white " type="submit">Certificat</button>
+                                    </form>
                                 </div>
                             </article>
                         </div>
