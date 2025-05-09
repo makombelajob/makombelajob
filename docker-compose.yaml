@@ -13,14 +13,14 @@ services:
 
     database:
         image: mysql:8.0
-        container_name: makombelajob_db
+        container_name: makombelajob_db_1
         environment:
             MYSQL_ROOT_PASSWORD: admin77911
             MYSQL_DATABASE: portfolio
             MYSQL_USER: admin
             MYSQL_PASSWORD: admin7791
         ports:
-            -   "3306:3306"
+            -   "3307:3306"
         volumes:
             -   ./mysql:/var/lib/mysql
 
