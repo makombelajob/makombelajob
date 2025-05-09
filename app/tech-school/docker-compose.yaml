@@ -1,0 +1,47 @@
+services:
+    apache:
+        image: php:8.5-apache
+        container_name: apache_tech_school
+        build:
+            context: php
+        ports:
+            - "88:80"
+        volumes:
+            - ./app:/var/www/html/
+        depends_on:
+            - database
+    
+    database:
+        image: mysql:8.0
+        container_name: mysql_tech_school
+        environment:
+            MYSQL_ROOT_PASSWORD: techAdmin7791
+            MYSQL_DATABASE: techSchool
+            MYSQL_USER: admin
+            MYSQL_PASSWORD: adminTech7791
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./mysql:/var/lib/mysql
+    
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: phpmyadmin_tech_school
+        ports:
+            - "8082:80"
+        environment:
+            PMA_HOST: database
+            PMA_PASSWORD: techAdmin7791
+        depends_on:
+            - database
+    
+    mailhog:
+        image: mailhog/mailhog
+        container_name: mailhog_tech_school
+        logging:
+            driver: 'none'
+        ports:
+            - "1026:1025"
+            - "8026:8025"
+
+    
