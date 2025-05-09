@@ -5,7 +5,7 @@ services:
         build:
             context: php
         ports:
-            - "88:80"
+            - "81:80"
         volumes:
             - ./app:/var/www/html/
         depends_on:
@@ -20,7 +20,7 @@ services:
             MYSQL_USER: admin
             MYSQL_PASSWORD: adminTech7791
         ports:
-            - "3306:3306"
+            - "3307:3306"
         volumes:
             - ./mysql:/var/lib/mysql
     
