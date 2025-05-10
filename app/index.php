@@ -52,7 +52,7 @@ include_once 'includes/header.php';
                             <h5 class="card-title">Agent Polyvalent</h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">Burger-King - Brest</h6>
                             <h6>Septembre 2022 - janvier 2023</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">J'ai occupé différents types des postes au sein du fast food BURGER-KING, niveau accueil, cuisine et autres... En suivant le rythme fluent des clients.</p>
                         </div>
                     </article>
                     <article class="card alert alert-info m-auto my-2 col-md-5" style="width: 18rem;">
@@ -171,6 +171,52 @@ include_once 'includes/header.php';
                                 </div>
                             </article>
                         </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section id="langues">
+                <div class="text-center my-3 col-12">
+                    <h2 class="fs-1 text-uppercase fw-semibold text-primary">Langues parlées</h2>
+                </div>
+                <div class="col-11 m-auto">
+                    <div class="row justify-content-between">
+                        <article class="alert alert-secondary col-12 col-md-5 col-lg-3">
+                            <h3 class="fs-3 fw-semibold">Anglais</h3>
+                            <aside class="text-capitalize fs-5 text-secondary">écrit et parlée bien</aside>
+                        </article>
+                        <article class="alert alert-secondary col-12 col-md-5 col-lg-3">
+                            <h3 class="fs-3 fw-semibold">Français</h3>
+                            <aside class="text-capitalize fs-5 text-secondary">écrit et parlée très bien</aside>
+                        </article>
+                        <article class="alert alert-secondary col-12 col-md-5 col-lg-3">
+                            <h3 class="fs-3 fw-semibold">Autres Langues</h3>
+                            <aside class="text-capitalize fs-5 text-secondary">4 autres langues africaines</aside>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section>
+                <div class="text-center my-3 col-12">
+                    <h2 class="fs-1 text-uppercase fw-semibold text-primary">Centre d'intérêts</h2>
+                </div>
+                <div class="col-11 m-auto">
+                    <div class="row justify-content-between text-black">
+                        <article class="alert alert-warning col-12 col-md-5 col-lg-3">
+                            <h3 class="fs-3 text-black fw-semibold">Jouer au basketball</h3>
+                            <p class="fs-4 text-black">J'ai bien joué en équipe et faire des nouvelles connaissances et défit.</p>
+                        </article>
+                        <article class="alert alert-warning col-12 col-md-5 col-lg-3">
+                            <h3 class="fs-3 text-black fw-semibold">Faire du randonné</h3>
+                            <p class="fs-4 text-black">Découvrir et admirer la nature, tout en faisant du sport.</p>
+                        </article>
+                        <article class="alert alert-warning col-12 col-md-5 col-lg-3">
+                            <h3 class="fs-3 text-black fw-semibold">Lire le livre</h3>
+                            <p class="fs-4 text-black">La géopolitique, avoir une connaissance du monde qui nous entoûrent.</p>
+                        </article>
                     </div>
                 </div>
             </section>
