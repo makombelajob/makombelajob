@@ -37,8 +37,10 @@ include_once 'includes/header.php'; ?>
                         <label class="form-label fs-2 my-3" for="dbs">Catégorie</label>
                         <select class="form-control text-center fs-2" name="category" id="dbs">
                             <option value="">===catégorie===</option>
-                            <option value="students">élèves</option>
-                            <option value="teachers">enseignants</option>
+                            <option value="student" <?= (!empty($_SESSION['data']['category']) && $_SESSION['data']['category'] === 'student') ? 'selected' : ''; ?>>élève</option>
+                            <option value="parent" <?= (!empty($_SESSION['data']['category']) && $_SESSION['data']['category'] === 'parent') ? 'selected' : ''; ?>>Parent</option>
+                            <option value="teacher" <?= (!empty($_SESSION['data']['category']) && $_SESSION['data']['category'] === 'teacher') ? 'selected' : ''; ?>>Enseignant</option>
+                            <option value="admin" <?= (!empty($_SESSION['data']['category']) && $_SESSION['data']['category'] === 'admin') ? 'selected' : ''; ?>>Administrateur</option>
                         </select>
                     </div>
                     <div class="col-12">

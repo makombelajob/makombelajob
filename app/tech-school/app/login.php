@@ -19,13 +19,13 @@ include_once 'includes/header.php';
                         <input class="form-control fs-2" type="password" id="passwd" placeholder="Entrez votre Mot de pass" name="password">
                     </div>
                     <div id="dbsField">
-                        <label class="form-label fs-1 my-3" for="dbs">Catégorie</label>
-                        <select class="form-control text-center fs-2" id="dbs" name="role">
+                        <label class="form-label fs-2 my-3" for="dbs">Catégorie</label>
+                        <select class="form-control text-center fs-2" name="category" id="dbs">
                             <option value="">===catégorie===</option>
-                            <option value="student">student</option>
-                            <option value="parent">parent</option>
-                            <option value="teacher">teacher</option>
-                            <option value="administrator">administrator</option>
+                            <option value="student" <?= (!empty($_SESSION['data']['category']) && $_SESSION['data']['category'] === 'student') ? 'selected' : ''; ?>>élève</option>
+                            <option value="parent" <?= (!empty($_SESSION['data']['category']) && $_SESSION['data']['category'] === 'parent') ? 'selected' : ''; ?>>Parent</option>
+                            <option value="teacher" <?= (!empty($_SESSION['data']['category']) && $_SESSION['data']['category'] === 'teacher') ? 'selected' : ''; ?>>Enseignant</option>
+                            <option value="admin" <?= (!empty($_SESSION['data']['category']) && $_SESSION['data']['category'] === 'admin') ? 'selected' : ''; ?>>Administrateur</option>
                         </select>
                     </div>
                     <div class="text-center my-3">

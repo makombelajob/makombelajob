@@ -2,9 +2,10 @@
 include_once 'includes/verify_session.php';
 
 require_once 'includes/dbconnect.php';
-$sql = 'SELECT Result.grade, Result.remarque, Course.* FROM Result INNER JOIN Course ON Result.course_id = Course.course_id WHERE Result.user_id = :id;';
+
+$sql = 'SELECT Result.grade, Result.remark, Course.* FROM Result INNER JOIN Course ON Result.course_id = Course.course_id WHERE Result.user_id = :id;';
 $stmt = $pdo->prepare($sql);
-$stmt->bindValue(':id', $_SESSION['user']['id'], PDO::PARAM_INT);
+$stmt->bindValue(':id', $_SESSION['user']['user_id'], PDO::PARAM_INT);
 if ($stmt->execute()) {
     $resultUsers = $stmt->fetchAll();
 }
