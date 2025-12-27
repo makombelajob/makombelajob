@@ -6,7 +6,7 @@ Welcome to my personal developer portfolio! This website is a showcase of who I 
 
 ## 🖼️ Preview
 
-![Preview](multimedia/jobb.jpg)
+![Preview](app/assets/images/jobb.jpg)
 
 ---
 
