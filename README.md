@@ -105,7 +105,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 **Job Makombela**  
 Junior Web & Mobile Developer  
 Toulouse, France 🇫🇷  
-📧 [makombelajob@gmail.com](mailto:makombelajob@gmail.com)
+📧 [contact@jobmakombela.fr](mailto:contact@jobmakombela.fr)
 
 ---
 
